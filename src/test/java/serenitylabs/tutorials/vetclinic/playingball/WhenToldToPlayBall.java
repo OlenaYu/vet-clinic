@@ -10,6 +10,18 @@ import java.io.PrintStream;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 import static serenitylabs.tutorials.vetclinic.playingball.model.Game.*;
+/*
+Step 1
+
+Review the tests in the WhenToldToPlayBall class, and ensure they all run correctly. Now refactor the implementation
+lines in the goPlay() method of the Child class into separate classes (PlayFootball, PlayTennis, etc).
+
+Step 2
+
+Make each of these classes implement the Player interface, which has only one method: play().
+Then refactor the goPlay() method to use this interface, and delegate the choice of the Player
+ implementation to another method.
+ */
 
 public class WhenToldToPlayBall {
 
